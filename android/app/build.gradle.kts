@@ -6,7 +6,9 @@ plugins {
 
 android {
     namespace = "com.example.wisata_candi"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 36
+    minSdk = 24
+    targetSdk = 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {

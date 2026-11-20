@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import '../models/candi.dart';
+import 'package:wisata_candi/models/candi.dart';
 
 class DetailScreen extends StatelessWidget {
   final Candi candi;
@@ -36,7 +36,9 @@ class DetailScreen extends StatelessWidget {
                       shape: BoxShape.circle,
                     ),
                     child: IconButton(
-                      onPressed: (){}, 
+                      onPressed: (){
+                        Navigator.pop(context);
+                      }, 
                       icon: const Icon(
                         Icons.arrow_back
                       )
